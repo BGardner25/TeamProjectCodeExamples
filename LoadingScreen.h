@@ -33,6 +33,10 @@ namespace NCL {
 
 				delete world;
 				world = nullptr;
+				if (renderer) {
+					delete renderer;
+					renderer = nullptr;
+				}
 			}
 
 			void Loading() {
